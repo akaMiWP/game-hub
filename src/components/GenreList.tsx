@@ -2,9 +2,9 @@ import React from "react";
 import useGenres from "../hooks/useGenres";
 
 const GenreList = () => {
-  const { genres } = useGenres();
+  const { data, error, isLoading } = useGenres();
 
-  return genres.map((genre) => <li>{genre.name}</li>);
+  return data.map((genre) => <li>{genre.name}</li>);
 };
 
 export default GenreList;
