@@ -48,9 +48,11 @@ function App() {
           />
         </GridItem>
       </Show>
-      <GridItem area="main">
-        <Heading paddingY={4}>{header}</Heading>
-        <HStack>
+      <GridItem area="main" paddingX="10px">
+        <Heading as="h2" size="2xl" paddingY={8}>
+          {header}
+        </Heading>
+        <HStack paddingBottom={4}>
           <PlatformSelector
             selectedPlatform={gameQuery.platform}
             onSetSelectedPlatform={(platform) =>
