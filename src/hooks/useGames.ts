@@ -1,6 +1,6 @@
 import { GameQuery } from "../App";
-import { Platform } from "../components/PlatformSelector";
 import useData from "./useData";
+import { Platform } from "./usePlatforms";
 
 export interface Game {
   id: number;
